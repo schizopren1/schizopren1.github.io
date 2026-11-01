@@ -3,53 +3,151 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vitaliy Balia | Profile</title>
+    <title>Vitaliy Balia | CV</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="container">
+    <!-- SIDEBAR -->
+    <header>
+        <!-- Логотип / Аватар зліва -->
+        <div id="logo-wrap">
+            <img src="https://github.com/schizopren1.png" alt="Vitaliy Balia" class="brand-photo">
+            <span class="brand-name">Vitaliy Balia</span>
+        </div>
 
-        <aside class="sidebar">
+        <!-- Навігація справа -->
+        <nav>
+            <div id="menu-icon">☰</div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#interests">Interests</a></li>
+                <li><a href="https://github.com/schizopren1" target="_blank" class="btn-contact">GitHub</a></li>
+                <li><a href="mailto:vitaliybalia52@gmail.com" class="btn-contact">Email</a></li>
+            </ul>
+        </nav>
+    </header>
 
-            <img src="https://github.com/schizopren1.png" alt="Vitaliy Balia" class="avatar">
-            
-            <h1>Vitaliy Balia</h1>
-            <a href="https://github.com/schizopren1" target="_blank" class="username">@schizopren1</a>
-            <p class="bio">University student</p>
-        </aside>
+    <!-- Main Content -->
+    <div class="content-wrapper">
+        <main class="main-content">
 
 
-        <main class="content">
-            <section class="card">
-                <h3>About Me</h3>
-                <ul>
-                    <li><strong>Role:</strong> Passionate student aiming to become a .NET Full-Stack Developer</li>
-                    <li><strong>Experience:</strong> 4th-year student at the State University of Information and Communication Technologies</li>
-                    <li><strong>Skills:</strong> English C1, German B1</li>
-                    <li><strong>Tech Stack:</strong> C#, .NET 8, ASP.NET Core, EF Core, C++, PostgreSQL, Docker, Git, xUnit</li>
-                    <li><strong>Location:</strong> Kyiv, Ukraine</li>
-                </ul>
+            <section id="about" class="content-section">
+                <h2>About Me</h2>
+                <div class="about-content">
+
+                    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=700&auto=format&fit=crop&q=80" 
+                         alt="Developer Workspace" class="section-image">
+                    <p>
+                        Hello! I am a 4th-year student aiming to become a professional <strong>.NET Full-Stack Developer</strong>. 
+                        My primary focus is on backend architecture, building secure and fast RESTful APIs using C# and ASP.NET Core, 
+                        and designing scalable database models.
+                    </p>
+                    <p class="meta-location"> Location: Kyiv, Ukraine</p>
+                </div>
             </section>
 
-            <section class="card">
-                <h3>Interests</h3>
-                <dl>
-                    <dt>Tech Interests</dt>
-                    <dd>
-                        <ul>
-                            <li>Reverse-engineering open-source projects to analyze their architecture and core concepts.</li>
-                        </ul>
-                    </dd>
-                    <dt>Personal Interests</dt>
-                    <dd>
-                        <ul>
-                            <li>Music</li>
-                            <li>Reading Fiction</li>
-                        </ul>
-                    </dd>
-                </dl>
+            <!-- SKILLS -->
+            <section id="skills" class="content-section">
+                <h2>Technical Skills</h2>
+                <p>Technologies, tools, and frameworks I use in development:</p>
+                
+                <div class="skills-list">
+                    <span class="skill-tag">C#</span>
+                    <span class="skill-tag">.NET 8</span>
+                    <span class="skill-tag">ASP.NET Core</span>
+                    <span class="skill-tag">Entity Framework Core</span>
+                    <span class="skill-tag">PostgreSQL</span>
+                    <span class="skill-tag">Docker</span>
+                    <span class="skill-tag">Unit Testing (xUnit)</span>
+                    <span class="skill-tag">Git & GitHub</span>
+                    <span class="skill-tag">C++</span>
+                </div>
+
+                <div class="languages-block">
+                    <h4>Language Proficiency:</h4>
+                    <ul>
+                        <li><strong>English:</strong> C1 (Advanced)</li>
+                        <li><strong>German:</strong> B1 (Intermediate)</li>
+                        <li><strong>Ukrainian:</strong> Native</li>
+                    </ul>
+                </div>
             </section>
+
+            <!-- EDUCATION -->
+            <section id="education" class="content-section">
+                <h2>Education</h2>
+                <div class="education-card">
+                    <h3>State University of Information and Communication Technologies</h3>
+                    <span class="date-badge">2023 — Present (4th Year)</span>
+                    <p>Major in Computer Science & Software Engineering. Coursework covers algorithm optimization, system programming, object-oriented analysis, and database theory.</p>
+                </div>
+            </section>
+
+            <!-- PROJECTS -->
+            <section id="projects" class="content-section">
+                <h2>Selected Projects</h2>
+                <div class="projects-grid">
+
+                    <article class="project-card">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=500&auto=format&fit=crop&q=80" 
+                             alt="REST API preview" class="project-thumb">
+                        <div class="project-info">
+                            <h3>ASP.NET Core Web API</h3>
+                            <p>Modular backend architecture with JWT authentication, Repository Pattern, and PostgreSQL via EF Core.</p>
+                        </div>
+                    </article>
+
+
+                    <article class="project-card">
+                        <img src="https://images.unsplash.com/photo-1607799279861-4dd421887fb3?w=500&auto=format&fit=crop&q=80" 
+                             alt="Docker preview" class="project-thumb">
+                        <div class="project-info">
+                            <h3>Microservices Deployment</h3>
+                            <p>Automated orchestration using Docker Compose for web services, Redis caching, and persistent database volumes.</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+                 <!-- INTEREST -->
+            <section id="interests" class="content-section">
+                <h2>Interests & Research</h2>
+                <div class="interests-grid">
+
+
+                    <div class="interest-card">
+                        <img src="https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?q=80&w=2006&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" 
+                             alt="Projects">
+                        <p><strong>Analyze Projects</strong><br>Reverse-engineering open-source projects to analyze their architecture and core concepts.</p>
+                    </div>
+
+
+                    <div class="interest-card">
+                        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=400&auto=format&fit=crop&q=80" 
+                             alt="Cloud computing">
+                        <p><strong>DevOps & Clouds</strong><br>CI/CD, containerization, and modern architecture</p>
+                    </div>
+
+
+                    <div class="interest-card">
+                        <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?w=400&auto=format&fit=crop&q=80" 
+                             alt="Fiction books">
+                        <p><strong>Fiction Literature</strong><br>Sci-Fi and intellectual classics</p>
+                    </div>
+                </div>
+            </section>
+
         </main>
+
+        <!-- FOOTER -->
+        <footer class="site-footer">
+            <p>© 2026 Vitaliy Balia.</p>
+        </footer>
     </div>
 
 </body>
