@@ -66,7 +66,6 @@ nav ul {
 
 
 nav li {
-    display: inline-block;
     float: left;
     padding: 8px 10px;
 }
@@ -89,7 +88,7 @@ nav a:hover {
     border: 1px solid #30363d;
     padding: 6px 12px;
     border-radius: 6px;
-    color: #f0f6fc !important;
+    color: #f0f6fc;
 }
 
 .btn-contact:hover {
@@ -115,6 +114,7 @@ nav a:hover {
 
 
 .content-section {
+    scroll-margin-top: 95px;
     background-color: #161b22;
     border: 1px solid #30363d;
     border-radius: 8px;
