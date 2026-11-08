@@ -269,6 +269,10 @@ nav a:hover {
     color: #8b949e;
 }
 
+menu-toggle {
+    display: none; 
+}
+
 @media (max-width: 860px) {
     #menu-icon {
         display: block;
@@ -302,7 +306,7 @@ nav a:hover {
         z-index: 100;
     }
     
-    nav ul.show {
+    #menu-toggle:checked ~ ul {
         display: block;
     }
 
