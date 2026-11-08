@@ -279,7 +279,9 @@ nav a:hover {
         border-radius: 6px;
         padding: 4px 12px;
         cursor: pointer;
+        z-index: 100;
     }
+    
 
     #menu-icon:hover {
         background-color: #30363d;
@@ -289,7 +291,7 @@ nav a:hover {
     nav ul {
         display: none;
         position: absolute;
-        top: 65px;
+        top: 100%;
         right: 20px;
         width: 200px;
         background-color: #161b22;
@@ -297,6 +299,11 @@ nav a:hover {
         border-radius: 8px;
         padding: 10px;
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+        z-index: 100;
+    }
+    
+    nav ul.show {
+        display: block;
     }
 
     nav li {
@@ -315,11 +322,6 @@ nav a:hover {
         display: inline-block;
         margin-top: 4px;
     }
-
-    nav:hover ul {
-        display: block;
-    }
-
 
     .projects-grid,
     .interests-grid {
